@@ -5,6 +5,7 @@ if (!exists("EPCdata", mode="list")) {
 }
 
 # make plot1
+par(mfrow=c(1,1), mar = c(4, 5, 2, 1), oma = c(0, 0, 1, 0), cex.lab=1)
 hist(EPCdata$Global_active_power, col = "red", main="Global Active Power", xlab = "Global Active Power (kilowatts)")
 
 # save to file, overwrite if exist

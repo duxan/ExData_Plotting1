@@ -7,13 +7,13 @@ if(!file.exists("./data")){
 }
 
 # 3. make handle
-#fileURL <- "https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip"   TEMP COMMENT
+fileURL <- "https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip"   
 
 # 4. download data
-#download.file(fileURL, destfile = "./data/epc.zip", method = "curl")   TEMP COMMENT
+download.file(fileURL, destfile = "./data/epc.zip", method = "curl")  
 
 # 5. unzip file
-#unzip("./data/epc.zip", exdir = "./data")   TEMP COMMENT
+unzip("./data/epc.zip", exdir = "./data")   
 
 # 6. calculations 
 tmp <- 2100000*9*8 # 8 bits per numeric type value, source> http://www.r-bloggers.com/predicting-the-memory-usage-of-an-r-object-containing-numbers/

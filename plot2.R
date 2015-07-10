@@ -5,6 +5,7 @@ if (!exists("EPCdata", mode="list")) {
 }
 
 # make plot2
+par(mfrow=c(1,1), mar = c(4, 5, 2, 1), oma = c(0, 0, 1, 0), cex.lab=1)
 with(EPCdata, plot(Datetime, Global_active_power, type="l", ylab = "Global Active Power (kilowatts)"))
 
 # save to file, overwrite if exist
